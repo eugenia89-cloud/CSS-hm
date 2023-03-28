@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Check Box Styling</title>
+    <style>
+        .circle{
+            border: 3px solid gray ;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px ;
+            display: inline-block;
+            transform: translateY(15px);
+
+        }
+        input {
+            display: none;
+        }
+        input:checked + .circle {
+          border: 3px solid blue ; 
+          background-image: radial-gradient(blue 50%,white 52%); 
+        }
+        /* .circle-on{
+            border: 3px solid blue ;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px ;
+            background-image: radial-gradient(blue 50%,white 52%);
+
+        } */
+    </style>
+</head>
+<body>
+    <form>
+       <br>
+       <label>
+       <input type="checkbox">
+    <div class="circle"></div>
+       I agree with terms and conditions
+    </label>
+       <br>
+    </form>
+    
+    <!-- <div class="circle-on"></div> -->
+    
+    
+</body>
+</html>
