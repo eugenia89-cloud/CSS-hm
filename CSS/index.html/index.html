@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>FORM STYLING</title>
+    <style>
+    #subscribe-form {
+        background-color: #006699;
+        padding: 20px;
+    }
+
+   .form-heading {
+    color: white;
+    font-size: 27px;
+
+   }
+   .terms-actions {
+    color: blue;
+    font-size: 20px;
+
+   }
+
+   .input-email {
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    width: 450px;
+    background-image:url(at.svg) ;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+   }
+   .button-subscribe {
+    font-size: 30px;
+    padding: 10px;
+    background-image: url(email-arrow-right.svg);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-position: center;
+    background-color: 	 #4dc3ff;
+    border: none;
+   }
+</style>
+</head>
+<body>
+    <form action="ulr" id="subscribe-form">
+        <h2 class="form-heading">Join our newsletter list</h2>
+       <label>
+            <input type="text"
+            placeholder="e.g: john.doe@emaple.com"
+            required
+            autofocus
+            class="input-email"
+            >
+           
+       </label>
+       
+    <h3 class="terms-actions">
+        <input type="checkbox" required> 
+        I accept terms and conditions
+    </h3>
+    
+       <button class="button-subscribe">SEND</button>
+       
+    </form>
+    
+</body>
+</html>
