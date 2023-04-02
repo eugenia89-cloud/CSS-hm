@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Input Validation & CSS</title>
+    <style>
+        body{
+            background-color: #333;
+            font-family: Arial;
+            color: white;
+
+        }
+        label{
+            display: block;
+            width: 350px;
+            background-color: #666;
+            padding: 10px;
+            margin: 20px 0;
+           
+        }
+     input{
+        padding: 5px;
+        outline: none;
+         border: 2px solid #222;
+
+     }
+     input:focus {
+        border: 2px solid blue;
+        background-color: aliceblue;
+     }
+     input:invalid{
+        border: 2px solid red;
+     }
+    small{
+        display:none;
+        font-size:  10px ;
+        color: rgb(255, 119, 0);
+        margin-top: 10px;
+        text-align: right;
+        
+       
+    }
+      input:invalid + small {
+    display: block;
+    animation: shake 0.15s 3;
+
+   }
+    .mark{
+        
+        font-size: 30px;
+        color: red;
+        padding-right: 50px;
+       
+
+    }
+    i {
+       color: red;
+       text-decoration-line: underline;
+    }
+   
+   
+ 
+   @keyframes shake {
+    form{ padding-right: 0;}
+    to{ padding-right: 5px ;}
+   }
+        
+    
+  button {
+    font-weight: bold;
+    border: 2px solid darkgreen;
+    background-color: lightgray;
+    color:green;
+    
+  }
+  button:hover {
+    border: 2px solid darkblue;
+    background-color: aqua;
+    color: blue;
+  }
+    </style>
+</head>
+<body>
+    <form action="Url">
+        <br>
+        <label >
+            Your Full Name 
+           
+                <input 
+                  type="text"
+                  placeholder="e.g. John Doe" 
+                  pattern="[A-Z][a-z]+[A-Z][a-z]+$">
+                  <br>
+                  
+                 
+                  <small>
+                    <span class="mark">‼</span>
+                    You must enter the name as two capitalized words <br>
+                    like: <i>John Doe, Marry Poppins, Vlad Tepes, etc</i>
+                </small>
+                </label>
+                  
+            
+            
+        <br>
+        <br>
+        <button>Send</button>
+
+    </form>
+    
+</body>
+</html>
