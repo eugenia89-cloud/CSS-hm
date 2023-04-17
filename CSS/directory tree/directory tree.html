@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Directory Tree | Css Pseudo Selectors</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+        .tree {
+            color: white;
+            font-family: Arial;
+            list-style-type: "+";
+            font-size: 64px;
+           
+        }
+        .folder {
+            /* border: 1px solid red; */
+            background-image: url(foto/Oxygen-Icons.org-Oxygen-Actions-document-open.64.png);
+            background-repeat: no-repeat;
+            padding: 24px 0 24px 72px;
+            /* height: 18px; */
+            line-height: 18px;
+            list-style-type:"\2520";
+            
+        }
+        .file {
+            /* border: 1px solid red; */
+            background-image: url(foto/Oxygen-Icons.org-Oxygen-Actions-document-edit.64.png);
+            background-repeat: no-repeat;
+            padding: 24px 0 24px 72px;
+            /* height: 18px; */
+            line-height: 18px;
+            list-style-type:"\2520";
+            
+        }
+        .file:last-child {
+            list-style-type: "\2516";
+        }
+          .folder:last-child {
+            list-style-type: "\2516";
+          }  
+        .empty {
+            background-image: url(foto/Oxygen-Icons.org-Oxygen-Places-folder-blue.64.png);
+        }
+          .name {
+            font-size: 18px;
+          }
+            .file:hover {
+                background-image: url(foto/Oxygen-Icons.org-Oxygen-Actions-document-preview.64.png);
+            }  
+            .folder:hover {
+                background-image: url(foto/Hopstarter-Soft-Scraps-Folder-Explorer.64.png);
+
+            }
+         
+
+        
+    </style>
+</head>
+<body>
+    <ul class="tree" >
+        <li class="folder">
+            <div class="name">Project [Now]</div>
+            <ul>
+                <li class="file">
+                    <div class="name">File 1
+
+                </div>
+                </li>
+                <li class="file">
+                    <div class="name">File 2
+
+                </div>
+                </li>
+            </ul>
+        </li>
+        <li class="folder">
+            <div class="name"> Project [TBD]</div>
+            <ul>
+                <li class="file">
+                    <div class="name">File 1
+            
+                    </div>
+                </li>
+                <!-- <li class="file">
+                    <div class="name">File 2
+            
+                    </div>
+                </li> -->
+            </ul>
+        </li>
+        <li class="folder empty">
+            
+           <div class="name"> Project [Done]</div>
+        <ul>
+            <li class="file">
+                <div class="name">File 1
+        
+                </div>
+            </li>
+            <li class="file">
+                <div class="name">File 2
+        
+                </div>
+            </li>
+        </ul>
+        </li>
+        
+    </ul>
+</body>
+</html>
