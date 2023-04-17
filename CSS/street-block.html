@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Street Block | CSS</title>
+    <style>
+        body{
+            background-color: #223;
+        }
+        /* .street {
+            border: 1px dotted red;
+        } */
+        .house {
+            /* border: 1px solid green; */
+            width: 100px;
+            height: 150px;
+            display: inline-block;
+            
+        }
+        .bulding-tall{
+            display: inline-block;
+            height: 300px;
+            width: 100px;
+            background-color: beige;
+        
+        }
+        .door {
+            border: 2px solid black;
+            width: 30px;
+            height: 50px;
+            transform: translateY(245px) translateX(30px);
+            background-color: rgb(71, 71, 78);
+        }
+        .w1 {
+            border: 2px solid black;
+            width: 30px;
+            height: 40px;
+            transform: translateY(-42px) translateX(5px);
+            background-color: yellow;
+        }
+        .w2 {
+             border: 2px solid black;
+            width: 30px;
+            height: 40px;
+            transform: translateX(60px) translateY(-85px);
+            background-color: gray;
+        }
+        .w3 {
+            border: 2px solid black;
+            width: 70px;
+            height: 40px;
+            transform: translateX(10px) translateY(-50px);
+            background-color: rgb(28, 28, 83);
+        }
+        .w4 {
+            border: 2px solid black;
+            width: 30px;
+            height: 40px;
+            transform: translateY(-22px) translateX(5px);
+            background-color: yellow;
+            
+        }
+        .w5 {
+            border: 2px solid black;
+            width: 30px;
+            height: 40px;
+             transform: translateX(60px) translateY(-65px);
+            background-color: rgb(149, 149, 33);
+
+        
+        }
+        .cloud{
+            display: inline-block;
+            /* height: 20px; */
+            width: 50px;
+            /* background-color: #fff; */
+            vertical-align: top;
+            padding-left: 20px;
+            padding-top: 50px;
+        }
+        .bulding-small{
+            display: inline-block;
+            /* border: 1px solid green; */
+            width: 180px;
+            height: 150px;
+            transform: translateY(-25px) translateX(100px);
+        }
+        .small-roof {
+             border: 90px solid white;
+              border-top-width: 0px;
+              border-bottom-color: brown;
+              border-bottom-width: 50px;
+              border-left-color: transparent;
+              border-right-color: transparent;
+        }
+        .small-wall {
+            background-color: beige;
+            height: 100px;
+        }
+        .small-window1 {
+            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            transform: translateX(10px) translateY(-10px);
+            background-color: rgb(56, 53, 58);
+
+        }
+        .small-window2 {
+            border: 1px solid black;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            transform: translateX(80px) translateY(-10px);
+            background-color: rgb(214, 214, 24);
+
+        }
+        .small-door {
+            border: 1px solid black;
+            width: 40px;
+            height: 60px;
+            display: inline-block;
+            transform: translateY(30px) translateX(-20px);
+            background-color: rgb(64, 7, 7);
+
+        }
+        .house-roof {
+            height: 0px;
+            width: 0px;
+            /* background-color: red; */
+            border: 50px solid white;
+            border-top-width: 0px;
+            border-bottom-color: brown;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-width: 70px;
+
+        }
+        .horn {
+            height: 25px;
+            width: 10px;
+            border: 2px solid black;
+            background-color: rgb(76, 18, 18);
+            transform: translateX(-25px) translateY(7px);
+        }
+        .house-wall {
+            background-color: antiquewhite;
+            height: 80px;
+
+        }
+        .house-window {
+            width: 30px;
+            height: 30px;
+            border: 2px solid brown;
+            transform: translateX(33px) translateY(23px);
+            background-color: yellow;
+           
+        }
+        .horizontal {
+            border-bottom: 2px solid black;
+            height: 14px;
+            width: inherit;
+        }
+        .vertical {
+            border-right: 2px solid black;
+            height: 30px;
+            width: 14px;
+            transform: translateY(-15px);
+        }
+        .star1 {
+            display: inline-block;
+            transform: translateY(-240px) translateX(-245px);
+        }
+        .star2 {
+            display: inline-block;
+             transform: translateY(-240px) translateX(30px);
+        }
+        .tree {
+            display: inline-block;
+            transform: translateX(-170px);
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="street">
+       <div class="house">
+        <div class="house-roof">
+            <div class="horn"></div>
+        </div>
+        <div class="house-wall">
+            <div class="house-window">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+            </div>
+        </div>
+       </div>
+       <div class="bulding-tall">
+        <div class="door"></div>
+        <div class="w1"></div>
+        <div class="w2"></div>
+        <div class="w3"></div>
+        <div class="w4"></div>
+        <div class="w5"></div>
+        
+
+        
+       </div>
+       <div class="cloud">
+        <img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/48/cloud-icon.png" alt="">
+       </div>
+       <div class="star1">
+        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/star-icon.png" alt="">
+       </div>
+       <div class="star2">
+        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/star-icon.png" alt="">
+       </div>
+       <div class="tree">
+        <img src="https://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/72/22330-deciduous-tree-icon.png" alt="">
+       </div>
+       <div class="bulding-small">
+        <div class="small-roof"></div>
+        <div class="small-wall">
+            <div class="small-window1"></div>
+            <div class="small-window2"></div>
+            <div class="small-door"></div>
+        </div>
+       </div>
+    </div>
+    
+</body>
+</html>
