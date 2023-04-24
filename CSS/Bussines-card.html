@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Card Example</title>
+    <style>
+        body {
+            background-color: #EEE;
+        }
+
+        h1,
+        h2,
+        p,
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        #business-card {
+            background-color: #111;
+            width: 400px;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-left: 10px;
+            color: white;
+            box-shadow: -5px -10px 10px 5px gray;
+           
+
+           
+        }
+
+        #business-card .name {
+            display: inline-block;
+            border-right: 2px solid white;
+            padding-right: 5px;
+            transform: translateY(20px);
+        }
+
+        #business-card .info {
+            display: inline-block;
+            transform: translateY(25px);
+        }
+
+        #business-card .name h1 {
+            font-size: 32px;
+        }
+
+        #business-card .name h2 {
+            color: rgb(163, 122, 17);
+            padding-left: 5px;
+            text-transform: uppercase;
+            
+        }
+
+        #business-card .name small {
+            color: rgb(155, 153, 153);
+            font-weight: bold;
+            
+        }
+
+        #business-card .info li {
+            color: rgb(176, 173, 173);
+            padding: 1px;
+        }
+
+        #business-card .info li:first-child::before {
+            content: url(https://icons.iconarchive.com/icons/kocco/ndroid/16/phone-blue-icon.png);
+            padding-right: 5px;
+        }
+        #business-card .info li:nth-child(2)::before {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/flatastic-5/16/Message-already-read-icon.png);
+            padding-right: 5px;
+        }
+        #business-card .info li:nth-child(3)::before {
+            content: url(https://icons.iconarchive.com/icons/icojam/blue-bits/16/globe-search-icon.png);
+            padding-right: 5px;
+        }
+    
+        
+    </style>
+</head>
+
+<body>
+    <div id="business-card">
+
+        <div class="name">
+            <h1>Firstname</h1>
+            <h2>Lastname</h2>
+            <small>web designer &#47; developer</small>
+        </div>
+        <div class="info">
+            <p>12345 Some Street, City<br>State, Province, Country</p>
+            <ul>
+                <li>+00 22 333444</li>
+                <li>email@somemail.example</li>
+                <li>www.exampledomain.example</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
