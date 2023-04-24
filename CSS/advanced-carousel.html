@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Advanced Carousel 3 slides| CSS Selectors</title>
+    <style>
+        body {
+            background-color: #234;
+        }
+        .carousel {
+            width: 850px;
+            /* border: 3px solid green; */
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px 2px #111;
+
+        }
+        .carousel .slide {
+            width: 2600px;
+            /* border: 1px solid red; */
+            transition: 2s;
+        }
+        .carousel .controls {
+            text-align: center;
+        }
+        .carousel .controls a {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+
+        }
+        .carousel .controls a:hover {
+            color: aqua;
+        }
+        .carousel #First:target .slide {
+            transform: translateX(0);
+        }
+        .carousel #Second:target .slide {
+            transform: translateX(-850px);
+        }
+        .carousel #Third:target .slide {
+            transform: translateX(-1700px);
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div id="First">
+        <div id="Second">
+            <div id="Third">
+                <div class="slide">
+                    <img src="https://fastly.picsum.photos/id/499/280/400.jpg?hmac=OgtQAY9lxbL87vW54uRsfsW1xCyL8TjLKDKnngoVbvo" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/820/280/400.jpg?hmac=Yw_GxrqvvwmVWf08fceyjOr2kWCwuCD6tU2kY7WZU2w" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/845/280/400.jpg?hmac=AWoV-2sf63vX39vbpzuVV_KJlTY1dTnh3ohfRmNX2ug" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/518/280/400.jpg?hmac=QLakflWYiDj3PWTIiLXdGp_xKEPR7xtjpzs4_ac7Sas"
+                     alt="">
+                    <img src="https://fastly.picsum.photos/id/429/280/400.jpg?hmac=A1juItqkebCInVZsfAMtN_ecRvLrNeTWseNpOjY-Ka4"
+                     alt="">
+                    <img src="https://fastly.picsum.photos/id/577/280/400.jpg?hmac=1kLWdX7mPoOy-c8gVIWXlBze2a519Bmb7vKS7ZDCDbs" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/879/280/400.jpg?hmac=tODVj5TJH0ie76SbSTUmOsIy8YSnRxRMJ6qdLjWKQlA" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/551/280/400.jpg?hmac=tN_9aPbr-UE78hK0tQSxXcU6fIYQdeRyXZJAG3MtgMI"
+                     alt="">
+                    <img src="https://fastly.picsum.photos/id/870/280/400.jpg?hmac=-Um4XROM6FFJMwmblJQp2MI9kA1gjrrRhBFX7IbrO_g" 
+                    alt="">
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="controls">
+            <a href="#First">➀</a>
+            <a href="#Second">➁</a>
+            <a href="#Third">➂</a>
+    
+        </div>
+    </div>
+    
+</body>
+</html>

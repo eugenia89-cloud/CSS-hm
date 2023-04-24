@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Two stage carousel| Advanced CSS Selectors </title>
+    <style>
+        body {
+           background-color: #234; 
+        }
+        .carousel {
+            width: 850px;
+            /* border: 5px solid green; */
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px 2px #111;
+
+        }
+        .carousel .slide {
+            width: 1800px;
+            /* border: 3px solid red; */
+            transition: 2s;
+
+        }
+        .carousel .controls {
+            text-align: center;
+        }
+        .carousel .controls a {
+            color: white;
+            font-size: 50px;
+            text-decoration: none;
+            
+        }
+        .carousel .controls a:hover {
+            color: rgb(159, 233, 11);
+        }
+            
+    
+        
+        .carousel #left:target .slide {
+            transform: translateX(0);
+        }
+        .carousel #right:target .slide {
+            transform: translateX(-850px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div id="left">
+            <div id="right">
+                <div class="slide">
+                    <img src="https://fastly.picsum.photos/id/124/280/400.jpg?hmac=SdoH0UQmLEKGthresIDZohDOlymj0zuNZL1sv0cbA-c" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/424/280/400.jpg?hmac=v87AUBcugcII7liiykmI9XBE4wYqywnwOU0Lr_sKmzY"
+                     alt="">
+                    <img src="https://fastly.picsum.photos/id/575/280/400.jpg?hmac=xEIcZAhzupvhcdkQCMjSN2UHX0cPG3Uf8Ds1ZhvUdyA" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/17/280/400.jpg?hmac=opbEGoJIo0ckpNRP6YC8Y3ZZmdrzwIzZ3FtvtGs37RM" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/106/280/400.jpg?hmac=dtBsbu-N4h5qzSxMwQDDAiAwX95IPMv1ntBZBLhjK0s" 
+                    alt="">
+                    <img src="https://fastly.picsum.photos/id/447/280/400.jpg?hmac=4aiRPhUqZsmuSU0u5LfI6dmIdrKYNJO9r5iWmc97-u0" 
+                    alt="">
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <a href="#left" >⇚</a>
+            <a href="#right" >⇛</a>
+        </div>
+    </div>
+    
+</body>
+</html>
